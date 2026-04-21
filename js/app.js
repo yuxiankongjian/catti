@@ -417,6 +417,7 @@ const loadingTexts = [
 // ===== 状态管理 =====
 let currentQuestion = 0;
 let scores = { E: 0, I: 0, S: 0, N: 0, T: 0, F: 0, J: 0, P: 0 };
+let scoreHistory = []; // 记录每一步的分数快照，用于返回上一题
 let resultType = '';
 let resultBreed = null;
 
@@ -490,6 +491,10 @@ function renderQuestion() {
     const questionText = document.getElementById('question-text');
     const optionsEl = document.getElementById('options');
     const helperBubble = document.getElementById('helper-bubble');
+    const backBtn = document.getElementById('btn-back');
+    
+    // 显示/隐藏返回按钮
+    backBtn.style.display = currentQuestion > 0 ? 'inline-flex' : 'none';
     
     // 更新进度
     const progress = ((currentQuestion) / questions.length) * 100;
@@ -532,6 +537,9 @@ function selectOption(option, btnEl) {
     });
     btnEl.classList.add('selected');
     btnEl.style.opacity = '1';
+    
+    // 保存当前分数快照（用于返回上一题）
+    scoreHistory.push({ ...scores });
     
     // 更新分数
     scores[option.score] += option.value;
@@ -908,6 +916,15 @@ function showToast(message) {
     }, 2500);
 }
 
+// ===== 返回上一题 =====
+function goBack() {
+    if (currentQuestion > 0 && scoreHistory.length > 0) {
+        currentQuestion--;
+        scores = scoreHistory.pop();
+        renderQuestion();
+    }
+}
+
 // ===== 重新测试 =====
 function retryQuiz() {
     // 重置所有分析区域的显示状态
@@ -920,6 +937,7 @@ function retryQuiz() {
     showPage('page-home');
     currentQuestion = 0;
     scores = { E: 0, I: 0, S: 0, N: 0, T: 0, F: 0, J: 0, P: 0 };
+    scoreHistory = [];
     resultType = '';
     resultBreed = null;
 }
