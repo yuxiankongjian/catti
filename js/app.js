@@ -846,7 +846,8 @@ function closeShareModal() {
 }
 
 function copyLink() {
-    const text = `我在 CATTI 猫咪人格测试中的结果是【${resultBreed.name}】（${resultBreed.title}）！快来测测你是什么猫 🐱`;
+    const url = 'https://yuxiankongjian.github.io/catti/';
+    const text = `我在 CATTI 猫咪人格测试中的结果是【${resultBreed.name}】（${resultBreed.title}）！快来测测你是什么猫 🐱\n🔗 ${url}`;
     
     if (navigator.clipboard) {
         navigator.clipboard.writeText(text).then(() => {
