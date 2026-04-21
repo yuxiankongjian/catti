@@ -654,6 +654,12 @@ function showResult() {
         actions.style.animation = 'slideUp 0.6s ease';
     }, 3600);
     
+    setTimeout(() => {
+        const link = document.getElementById('section-link');
+        link.style.display = 'block';
+        link.style.animation = 'slideUp 0.6s ease';
+    }, 4200);
+    
     // 滚动到顶部
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
@@ -831,11 +837,13 @@ function shareResult() {
     const modal = document.getElementById('share-modal');
     const preview = document.getElementById('share-preview');
     
+    const url = 'https://yuxiankongjian.github.io/catti/';
     preview.innerHTML = `
         <span class="share-preview-emoji">${resultBreed.emoji}</span>
         <div class="share-preview-name">${resultBreed.name}</div>
         <div class="share-preview-desc">${resultBreed.title} · ${resultType}</div>
-        <div class="share-preview-desc" style="margin-top:8px;font-size:0.75rem;opacity:0.7">CATTI 猫咪人格测试</div>
+        <div class="share-preview-desc" style="margin-top:12px;font-size:0.8rem;opacity:0.9">🔗 ${url}</div>
+        <div class="share-preview-desc" style="margin-top:4px;font-size:0.7rem;opacity:0.6">CATTI 猫咪人格测试</div>
     `;
     
     modal.classList.add('show');

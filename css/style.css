@@ -922,6 +922,42 @@ body {
     color: var(--text-primary);
 }
 
+/* ========== 网站链接区域 ========== */
+.site-link-section {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: var(--radius);
+    animation: slideUp 1.6s ease;
+}
+
+.site-link-text {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    margin-bottom: 0.8rem;
+}
+
+.site-link-url {
+    display: inline-block;
+    color: var(--accent-orange);
+    font-size: 0.95rem;
+    text-decoration: none;
+    padding: 8px 20px;
+    border: 1px solid rgba(255, 140, 66, 0.3);
+    border-radius: 30px;
+    background: rgba(255, 140, 66, 0.08);
+    transition: var(--transition);
+    word-break: break-all;
+}
+
+.site-link-url:hover {
+    background: rgba(255, 140, 66, 0.15);
+    border-color: var(--accent-orange);
+    transform: translateY(-1px);
+}
+
 /* ========== 响应式 ========== */
 @media (max-width: 480px) {
     .title { font-size: 3rem; }
