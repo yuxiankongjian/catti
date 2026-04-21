@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CATTI · 猫咪人格测试</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 浮动猫爪背景 -->
+    <div id="paw-bg"></div>
+
+    <!-- ========== 首页 ========== -->
+    <section id="page-home" class="page active">
+        <div class="home-content">
+            <div class="cat-avatar-home">
+                <div class="cat-face">
+                    <div class="cat-ear left"></div>
+                    <div class="cat-ear right"></div>
+                    <div class="cat-eye left"><div class="cat-pupil"></div></div>
+                    <div class="cat-eye right"><div class="cat-pupil"></div></div>
+                    <div class="cat-nose"></div>
+                    <div class="cat-mouth"></div>
+                    <div class="cat-whisker left w1"></div>
+                    <div class="cat-whisker left w2"></div>
+                    <div class="cat-whisker left w3"></div>
+                    <div class="cat-whisker right w1"></div>
+                    <div class="cat-whisker right w2"></div>
+                    <div class="cat-whisker right w3"></div>
+                </div>
+            </div>
+            <h1 class="title">CATTI</h1>
+            <p class="subtitle">猫咪人格测试</p>
+            <p class="desc">如果你是一只猫，你会是什么品种？<br>回答 12 道题，发现你的猫咪灵魂 🐾</p>
+            <button class="btn-start" onclick="startQuiz()">
+                <span>开始测试</span>
+                <span class="btn-paw">🐾</span>
+            </button>
+            <p class="test-count">已有 <span id="test-count-num">999+</span> 只猫咪完成测试</p>
+        </div>
+    </section>
+
+    <!-- ========== 问答页 ========== -->
+    <section id="page-quiz" class="page">
+        <div class="quiz-container">
+            <!-- 进度条 -->
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+                <div class="progress-paw" id="progress-paw">🐾</div>
+            </div>
+            <div class="progress-text"><span id="current-q">1</span> / <span id="total-q">12</span></div>
+
+            <!-- 问题区域 -->
+            <div class="question-area" id="question-area">
+                <h2 class="question-text" id="question-text"></h2>
+                <div class="options" id="options"></div>
+            </div>
+
+            <!-- 猫咪助手 -->
+            <div class="cat-helper" id="cat-helper">
+                <div class="helper-bubble" id="helper-bubble">喵~ 选一个吧</div>
+                <div class="helper-cat">🐱</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 分析中页 ========== -->
+    <section id="page-loading" class="page">
+        <div class="loading-content">
+            <div class="loading-cat">
+                <div class="loading-face">🐱</div>
+                <div class="loading-dots">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+            <h2 id="loading-text">正在分析你的猫咪DNA...</h2>
+            <div class="loading-bar">
+                <div class="loading-bar-fill" id="loading-bar-fill"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 结果页 ========== -->
+    <section id="page-result" class="page">
+        <div class="result-container">
+            <h2 class="result-title">你的猫咪人格是</h2>
+            
+            <!-- 品种卡片 -->
+            <div class="breed-card" id="breed-card">
+                <div class="card-glow"></div>
+                <div class="card-inner">
+                    <div class="breed-emoji" id="breed-emoji">🐱</div>
+                    <h3 class="breed-name" id="breed-name">布偶猫</h3>
+                    <p class="breed-title" id="breed-title">温柔天使</p>
+                    <div class="breed-tags" id="breed-tags"></div>
+                </div>
+            </div>
+
+            <!-- 雷达图 -->
+            <div class="radar-section result-hidden" id="section-radar">
+                <h3>性格维度分析</h3>
+                <canvas id="radar-canvas" width="300" height="300"></canvas>
+            </div>
+
+            <!-- 详细分析 -->
+            <div class="analysis-section result-hidden" id="section-analysis">
+                <h3>🐱 猫咪评语</h3>
+                <p class="analysis-text" id="analysis-text"></p>
+            </div>
+
+            <!-- 猫咪人生 -->
+            <div class="life-section result-hidden" id="section-life">
+                <h3>🏠 你的猫咪人生</h3>
+                <div class="life-card" id="life-card"></div>
+            </div>
+
+            <!-- 所有品种 -->
+            <div class="all-breeds-section result-hidden" id="section-breeds">
+                <h3>🐾 猫咪图鉴</h3>
+                <div class="breeds-grid" id="breeds-grid"></div>
+            </div>
+
+            <!-- 操作按钮 -->
+            <div class="result-actions result-hidden" id="section-actions">
+                <button class="btn-share" onclick="shareResult()">
+                    📱 分享我的结果
+                </button>
+                <button class="btn-retry" onclick="retryQuiz()">
+                    🔄 重新测试
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分享弹窗 -->
+    <div class="modal-overlay" id="share-modal">
+        <div class="modal-content">
+            <h3>分享你的猫咪人格</h3>
+            <div class="share-card-preview" id="share-preview"></div>
+            <div class="share-buttons">
+                <button class="share-btn wechat" onclick="copyLink()">🔗 复制链接</button>
+                <button class="share-btn" onclick="saveImage()">📸 保存图片</button>
+            </div>
+            <button class="modal-close" onclick="closeShareModal()">✕</button>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
