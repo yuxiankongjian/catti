@@ -259,12 +259,12 @@ body {
 }
 .cat-whisker.left { left: -25px; }
 .cat-whisker.right { right: -25px; }
-.cat-whisker.left.w1 { top: 52px; transform: rotate(-10deg); }
+.cat-whisker.left.w1 { top: 52px; transform: rotate(10deg); }
 .cat-whisker.left.w2 { top: 60px; transform: rotate(0deg); }
-.cat-whisker.left.w3 { top: 68px; transform: rotate(10deg); }
-.cat-whisker.right.w1 { top: 52px; transform: rotate(10deg); }
+.cat-whisker.left.w3 { top: 68px; transform: rotate(-10deg); }
+.cat-whisker.right.w1 { top: 52px; transform: rotate(-10deg); }
 .cat-whisker.right.w2 { top: 60px; transform: rotate(0deg); }
-.cat-whisker.right.w3 { top: 68px; transform: rotate(-10deg); }
+.cat-whisker.right.w3 { top: 68px; transform: rotate(10deg); }
 
 .title {
     font-family: 'ZCOOL KuaiLe', cursive;
