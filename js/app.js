@@ -6,95 +6,95 @@ const questions = [
         id: 1,
         dimension: 'EI',
         text: '🏠 铲屎官出门了，你一整天独自在家，你会……',
-        helper: '独自在家最开心啦~',
+        helper: '独自在家的时光，最能看出一只猫的本性喵~',
         options: [
-            { text: '🐱 立刻跳上窗台，观察外面的世界，等铲屎官回来', score: 'E', value: 2 },
-            { text: '😴 找个最暖和的地方睡大觉，梦里什么都有', score: 'I', value: 2 },
-            { text: '🎾 把家里的每个角落都探索一遍，制造点小混乱', score: 'E', value: 1 },
-            { text: '🎭 对着镜子里的自己发呆，思考猫生', score: 'I', value: 1 },
+            { text: '🗣️ 坐在门口大叫，催铲屎官赶紧回来', score: 'E', value: 2 },
+            { text: '🏃 全屋跑酷探险，沙发就是我的跑酷场', score: 'E', value: 1 },
+            { text: '😴 找个最暖和的地方卷成一团，美美睡一觉', score: 'I', value: 2 },
+            { text: '🧘 跳到最高的柜子上，安静地俯瞰这个世界', score: 'I', value: 1 },
         ]
     },
     {
         id: 2,
         dimension: 'EI',
         text: '🎉 铲屎官带了一群陌生人回家聚会，你的反应是……',
-        helper: '陌生人？让我看看~',
+        helper: '来客人啦！你会怎么表现喵？',
         options: [
-            { text: '👑 大大方方走到人群中，接受所有人的膜拜和投喂', score: 'E', value: 2 },
-            { text: '🔍 远远暗中观察，确认安全后试探性靠近', score: 'E', value: 1 },
-            { text: '🏃 立刻钻进床底，谁也别想找到本喵', score: 'I', value: 2 },
-            { text: '🛋️ 跳到最高的柜子上，用鄙夷的眼神俯视众生', score: 'I', value: 1 },
+            { text: '👑 大方走到人群中，接受所有人的膜拜和投喂', score: 'E', value: 2 },
+            { text: '🔍 好奇地凑过去闻闻，看新朋友好不好玩', score: 'E', value: 1 },
+            { text: '🏃 立刻消失，钻进谁也找不到的秘密基地', score: 'I', value: 2 },
+            { text: '😼 远远蹲在高处，用嫌弃的眼神俯视全场', score: 'I', value: 1 },
         ]
     },
     {
         id: 3,
         dimension: 'EI',
-        text: '🐾 在猫咪公园遇到了其他猫，你会……',
-        helper: '其他猫？有意思~',
+        text: '🐾 铲屎官又带回了一只新猫！你的第一反应是……',
+        helper: '有新室友了喵！你会怎么对待TA？',
         options: [
-            { text: '🤝 主动上去打招呼，很快就和新朋友追逐打闹', score: 'E', value: 2 },
-            { text: '👀 默默在旁边看别的猫玩，偶尔参与一下', score: 'E', value: 1 },
-            { text: '😺 找个安静的角落自己晒太阳，独处最舒服', score: 'I', value: 2 },
-            { text: '😼 高冷地路过，假装没看到对方', score: 'I', value: 1 },
+            { text: '🤝 主动打招呼，热情地分享玩具和零食', score: 'E', value: 2 },
+            { text: '💕 开心地凑上去蹭蹭，终于有小伙伴了！', score: 'E', value: 1 },
+            { text: '😤 哈气警告：这是本喵的地盘，请保持距离', score: 'I', value: 2 },
+            { text: '🗡️ 冷冷瞥一眼，然后潇洒转身离去', score: 'I', value: 1 },
         ]
     },
     {
         id: 4,
         dimension: 'SN',
         text: '📦 铲屎官买了个新东西，留下了一个大纸箱。你会……',
-        helper: '纸箱！是我的最爱！',
+        helper: '纸箱！猫猫界的顶级奢侈品来了喵~',
         options: [
-            { text: '📦 毫不犹豫钻进去，这是最完美的城堡！', score: 'S', value: 2 },
-            { text: '✨ 看着纸箱开始幻想自己是宇宙飞船的舰长', score: 'N', value: 2 },
-            { text: '🔬 仔细嗅闻检查纸箱的每个角落和每条缝隙', score: 'S', value: 1 },
-            { text: '🎨 觉得纸箱的形状像只兔子，开始和它对话', score: 'N', value: 1 },
+            { text: '📦 毫不犹豫钻进去，这就是最完美的城堡！', score: 'S', value: 2 },
+            { text: '🔬 仔细嗅闻每条缝隙，认真检查纸箱的安全性', score: 'S', value: 1 },
+            { text: '🎭 觉得纸箱像一只兔子，开始和它对话', score: 'N', value: 2 },
+            { text: '✨ 看着纸箱开始幻想，自己是宇宙飞船的舰长', score: 'N', value: 1 },
         ]
     },
     {
         id: 5,
         dimension: 'SN',
-        text: '🐦 窗台上飞来一只从未见过的小鸟，你的第一反应是……',
-        helper: '那是什么！？',
+        text: '🐦 窗台上飞来一只从没见过的小鸟，你的第一反应是……',
+        helper: '那是什么！没见过的小东西喵！',
         options: [
-            { text: '⚡ 立刻进入狩猎模式，瞳孔放大，尾巴疯狂摆动', score: 'S', value: 2 },
-            { text: '🤔 思考这只鸟从哪里来，它有没有家人', score: 'N', value: 2 },
-            { text: '🎯 计算跳跃轨迹，寻找最佳扑击角度', score: 'S', value: 1 },
-            { text: '🌈 想象如果自己也会飞，世界会变成什么样', score: 'N', value: 1 },
+            { text: '⚡ 瞳孔放大进入狩猎模式，尾巴疯狂摆动', score: 'S', value: 2 },
+            { text: '🎯 冷静计算跳跃轨迹，寻找最佳扑击角度', score: 'S', value: 1 },
+            { text: '🤔 思考这只鸟从哪来，它有没有家人在等它', score: 'N', value: 2 },
+            { text: '🌈 想象如果自己也会飞，天空会是什么感觉', score: 'N', value: 1 },
         ]
     },
     {
         id: 6,
         dimension: 'SN',
         text: '🍽️ 铲屎官给你换了一种新猫粮，你会……',
-        helper: '新口味？让我尝尝~',
+        helper: '新口味？让我看看是什么喵~',
         options: [
-            { text: '👍 先闻闻，再小心尝一口，好吃就大口吃', score: 'S', value: 2 },
-            { text: '🎪 觉得这是铲屎官精心准备的惊喜，要好好品鉴', score: 'N', value: 2 },
-            { text: '😕 和之前的一对比，分析口味差异', score: 'S', value: 1 },
-            { text: '🧠 思考猫粮背后可能隐藏的秘密配方', score: 'N', value: 1 },
+            { text: '👅 先仔细闻闻，再小心尝一口，不好吃就坚决拒绝', score: 'S', value: 2 },
+            { text: '📊 和之前的仔细对比，认真分析口味差异', score: 'S', value: 1 },
+            { text: '💝 觉得这是铲屎官精心准备的心意，开心享用', score: 'N', value: 2 },
+            { text: '🧠 思考猫粮背后可能藏着什么秘密配方', score: 'N', value: 1 },
         ]
     },
     {
         id: 7,
         dimension: 'TF',
         text: '😿 你不小心打碎了铲屎官最爱的花瓶，你会……',
-        helper: '糟糕了喵……',
+        helper: '糟糕了喵……这下怎么办！',
         options: [
-            { text: '🥺 用水汪汪的大眼睛看着铲屎官，立刻获得原谅', score: 'F', value: 2 },
             { text: '🧐 冷静分析：花瓶放的位置本来就不对', score: 'T', value: 2 },
+            { text: '📋 制定应对方案，等铲屎官回来假装无事发生', score: 'T', value: 1 },
+            { text: '🥺 用水汪汪的大眼睛看着铲屎官，立刻获得原谅', score: 'F', value: 2 },
             { text: '💕 主动蹭蹭铲屎官撒娇，用爱化解一切', score: 'F', value: 1 },
-            { text: '📊 等铲屎官回来假装什么都没发生，制定应对方案', score: 'T', value: 1 },
         ]
     },
     {
         id: 8,
         dimension: 'TF',
         text: '😾 另一只猫抢了你的窝，你怎么办？',
-        helper: '那是我的窝！',
+        helper: '我的窝被抢了！这能忍吗喵？！',
         options: [
             { text: '💪 正面刚！大声哈气警告，把窝夺回来', score: 'T', value: 2 },
+            { text: '⚖️ 评估双方实力差距，必要时战略撤退', score: 'T', value: 1 },
             { text: '😢 委屈地去找铲屎官告状，求安慰', score: 'F', value: 2 },
-            { text: '⚖️ 评估双方实力差距，必要时战略性撤退', score: 'T', value: 1 },
             { text: '🤗 算了，分享也是一种爱，挤一挤更暖和', score: 'F', value: 1 },
         ]
     },
@@ -102,48 +102,48 @@ const questions = [
         id: 9,
         dimension: 'TF',
         text: '🎁 铲屎官送了你一个新玩具，你会……',
-        helper: '礼物！给我看看！',
+        helper: '礼物！是给我的吗喵！',
         options: [
-            { text: '😍 感动得咕噜咕噜叫，这是铲屎官满满的爱', score: 'F', value: 2 },
             { text: '🔧 先研究一下这个玩具的机关原理', score: 'T', value: 2 },
-            { text: '💕 叼着玩具放到铲屎官脚边，一起玩更有趣', score: 'F', value: 1 },
-            { text: '📝 测试这个玩具的各种玩法，做个评测', score: 'T', value: 1 },
+            { text: '📝 测试各种玩法，做一个全面评测', score: 'T', value: 1 },
+            { text: '😍 感动得咕噜咕噜叫，这是铲屎官满满的爱', score: 'F', value: 2 },
+            { text: '💕 叼着玩具放到铲屎官脚边，一起玩才开心', score: 'F', value: 1 },
         ]
     },
     {
         id: 10,
         dimension: 'JP',
         text: '⏰ 每天早上的日常安排，你更倾向于……',
-        helper: '新的一天开始啦~',
+        helper: '新的一天开始啦喵~你有什么计划？',
         options: [
             { text: '📋 严格按照时间表：吃饭→舔毛→晒太阳→睡觉', score: 'J', value: 2 },
-            { text: '🎪 看心情决定今天要干嘛，每天都不一样', score: 'P', value: 2 },
-            { text: '📍 有固定的据点，但什么时候去随缘', score: 'J', value: 1 },
-            { text: '🎲 跟着感觉走，看到什么有趣就去做什么', score: 'P', value: 1 },
+            { text: '🔄 睡前固定仪式：转三圈→踩奶→舔爪子→入睡', score: 'J', value: 1 },
+            { text: '🎪 看心情决定今天干嘛，每天都不一样', score: 'P', value: 2 },
+            { text: '🎲 跟着感觉走，看到什么有趣就做什么', score: 'P', value: 1 },
         ]
     },
     {
         id: 11,
         dimension: 'JP',
         text: '🧹 铲屎官在打扫卫生，把你的东西都移位了，你会……',
-        helper: '我的东西！别动！',
+        helper: '我的东西！别乱动喵！',
         options: [
-            { text: '😤 立刻把所有东西挪回原来的位置，一样都不能差', score: 'J', value: 2 },
-            { text: '🤷 无所谓，刚好换个新布局也挺新鲜', score: 'P', value: 2 },
-            { text: '📏 记住每样东西的位置，趁铲屎官不注意偷偷还原', score: 'J', value: 1 },
-            { text: '🏄 顺势在打扫中的房间里探险，哪里都有新发现', score: 'P', value: 1 },
+            { text: '😤 立刻把所有东西挪回原位，一样都不能差', score: 'J', value: 2 },
+            { text: '📏 记住每样东西的位置，趁人不注意偷偷还原', score: 'J', value: 1 },
+            { text: '🤷 无所谓，换个新布局也挺新鲜', score: 'P', value: 2 },
+            { text: '🏄 顺势在打扫中探险，哪里都有新发现', score: 'P', value: 1 },
         ]
     },
     {
         id: 12,
         dimension: 'JP',
-        text: '🌙 睡觉前最后的安排，你会……',
-        helper: '困了喵……',
+        text: '🌙 到了睡觉时间，你会选择……',
+        helper: '困了喵……该去哪睡呢？',
         options: [
             { text: '🏠 必须回到自己固定的小窝才睡得着', score: 'J', value: 2 },
+            { text: '🛏️ 只睡铲屎官枕头旁边，别的地方都不行', score: 'J', value: 1 },
             { text: '🪐 看今天哪个地方舒服就睡哪里，随处可栖', score: 'P', value: 2 },
-            { text: '🔄 睡前仪式：转三圈→踩奶→舔爪子→入睡', score: 'J', value: 1 },
-            { text: '🎭 有时睡猫窝，有时睡沙发，有时睡铲屎官脸上', score: 'P', value: 1 },
+            { text: '🎭 有时猫窝有时沙发有时铲屎官脸上，全看心情', score: 'P', value: 1 },
         ]
     },
 ];
@@ -183,16 +183,16 @@ const breeds = {
     'ESFJ': {
         name: '布偶猫',
         emoji: '🧸',
-        title: '温柔社交猫',
-        tags: ['温柔', '粘人', '体贴', '优雅'],
-        traits: { energy: 45, curiosity: 60, social: 95, battle: 20, tsundere: 15, foodie: 70 },
-        analysis: '你是一只布偶猫——猫咪界的天使！你温柔、善良、体贴，对所有人都充满爱。你最喜欢的事情就是窝在铲屎官怀里，被轻轻抚摸。你是猫咪中的"社交达人"，不管对人还是对猫都非常友善。你的蓝眼睛里装着整个世界的美好，你的呼噜声是最好的治愈音乐。你就是那种让所有人都想抱一抱的完美猫咪！',
+        title: '粘人软糖猫',
+        tags: ['温柔', '粘人', '软糯', '信任'],
+        traits: { energy: 40, curiosity: 55, social: 85, battle: 15, tsundere: 10, foodie: 65 },
+        analysis: '你是一只布偶猫——猫界的"人形抱枕"！你最大的愿望就是永远挂在铲屎官身上，被抱着、被摸着、被宠爱着。你不会像暹罗猫那样管这管那，也不会像橘猫那样只顾干饭——你只想要铲屎官的怀抱。你的蓝眼睛里只有一个人，那就是你的铲屎官。你柔软得像一颗棉花糖，谁抱着你都会被你的温度融化。你不是社交达人，你只是"铲屎官专属挂件"。',
         life: {
-            home: '一个温馨的家，有柔软的毯子和温暖的阳光',
-            day: '等铲屎官回家 → 被抱着 → 蹭蹭所有人 → 一起窝在沙发上看电视',
-            owner: '铲屎官是你最爱的人，你会用一生陪伴TA',
-            food: '不挑食，铲屎官给的都是好吃的',
-            hobby: '被抱、被摸、被宠爱，给所有人传递温暖',
+            home: '一个有铲屎官的地方就是家，最好是铲屎官永远不离开的那种',
+            day: '等铲屎官回家 → 被抱着 → 蹭蹭铲屎官 → 跟着铲屎官走来走去 → 一起睡觉',
+            owner: '铲屎官就是你的全世界，TA不在你就趴在门口等',
+            food: '铲屎官喂的都好吃，最好能一边被摸一边吃',
+            hobby: '被抱、被摸、被举高高，做铲屎官身上最柔软的挂件',
         }
     },
     'ESFP': {
@@ -212,17 +212,17 @@ const breeds = {
     },
     'ENTJ': {
         name: '挪威森林猫',
-        emoji: '🦁',
-        title: '王者统帅猫',
-        tags: ['威严', '智慧', '霸气', '高贵'],
-        traits: { energy: 80, curiosity: 65, social: 60, battle: 95, tsundere: 80, foodie: 45 },
-        analysis: '你是一只挪威森林猫——天生的王者！你高大威猛的身躯下隐藏着一个精明的头脑。你从不做没有目的的事情，每一步都在你的战略计划之中。其他猫咪不自觉地向你臣服，因为你身上有一种不怒自威的气场。你不会浪费时间在无意义的社交上，但一旦你认定了一个目标，就会不惜一切去实现。',
+        emoji: '🌲',
+        title: '森林隐士猫',
+        tags: ['神秘', '独立', '温和', '深沉'],
+        traits: { energy: 55, curiosity: 60, social: 35, battle: 70, tsundere: 75, foodie: 45 },
+        analysis: '你是一只挪威森林猫——来自北欧森林的神秘隐士！你有着令人惊叹的毛发和深邃的眼神，但你从不在意别人的目光。你温和而独立，享受独处的时光，喜欢安静地待在高处俯瞰一切。你不是冷漠，你只是觉得大部分社交都毫无意义。偶尔你会在深夜跳到铲屎官身边，用你深沉的眼神凝视TA——那是你独有的、安静的爱。',
         life: {
-            home: '一座城堡级别的猫别墅，居高临下俯瞰众生',
-            day: '制定战略 → 指挥行动 → 独处思考 → 巡视领地',
-            owner: '铲屎官是你精心挑选的臣子，为你服务是TA的荣幸',
-            food: '高质量的饮食，量不在多，贵在精致',
-            hobby: '谋划大局，偶尔展现一下王者风范',
+            home: '一个有高处和角落的家，最好有个能独处的大树形猫爬架',
+            day: '独自巡视领地 → 在高处沉思 → 安静地吃饭 → 继续独处 → 夜深人静时活动',
+            owner: '铲屎官是你认可的室友，你们保持舒适的距离感',
+            food: '安安静静地吃，不被打扰，量要足但不需要太花哨',
+            hobby: '在高处思考猫生，偶尔展现一下深藏不露的实力',
         }
     },
     'ENTP': {
@@ -257,32 +257,32 @@ const breeds = {
     },
     'ENFP': {
         name: '金渐层',
-        emoji: '✨',
-        title: '梦想家猫猫',
-        tags: ['浪漫', '好奇', '热情', '自由'],
-        traits: { energy: 80, curiosity: 90, social: 85, battle: 30, tsundere: 35, foodie: 65 },
-        analysis: '你是一只金渐层——行走的"小太阳"！你毛茸茸的金色外表下藏着一颗永远充满热情的心。你对世界上的一切都充满好奇和热情，每一天在你眼中都是新的冒险。你的热情能融化最冷漠的铲屎官，你的想象力能让你把一个简单的瓶盖玩出花来。你有时候会突然发呆，那是因为你又在幻想一个只属于你的奇妙世界了。',
+        emoji: '👑',
+        title: '高冷公主猫',
+        tags: ['高冷', '佛系', '优雅', '傲娇'],
+        traits: { energy: 40, curiosity: 45, social: 30, battle: 25, tsundere: 85, foodie: 55 },
+        analysis: '你是一只金渐层——猫界的"金装女王"！你有着令人羡慕的金色毛发和圆润的身材，但你的性格可不是外表那么甜美。你佛系、独立、不爱互动，铲屎官想摸你得看你的心情。你不是讨厌铲屎官，你只是觉得"主动示好"这种事情太掉价了。你会优雅地出现在铲屎官面前，晃一圈，然后优雅地离开——留下一个华丽的背影。你就是那种"我很美但别碰我"的存在。',
         life: {
-            home: '充满色彩和玩具的温暖小窝，每天都能发现新乐趣',
-            day: '追逐光点 → 和各种玩具对话 → 对着窗外发呆幻想 → 给铲屎官表演节目',
-            owner: '铲屎官是你最好的玩伴和观众',
-            food: '吃饭也是一种冒险，喜欢尝试各种新口味',
-            hobby: '做梦、幻想、把平凡的日子过成童话',
+            home: '一个干净优雅的家，有你专属的皇位（猫窝要最高级的）',
+            day: '优雅起床 → 巡视自己的领地 → 找个阳光好的地方躺着 → 嫌弃地看着其他猫 → 优雅入睡',
+            owner: '铲屎官是你的仆人，负责提供食物和保持环境整洁',
+            food: '要好吃的，但别指望我会因为吃的就卖萌',
+            hobby: '保持优雅，偶尔允许铲屎官欣赏一下自己的美貌',
         }
     },
     'ISTJ': {
         name: '英国短毛猫',
         emoji: '🧐',
-        title: '绅士学霸猫',
-        tags: ['稳重', '自律', '靠谱', '传统'],
-        traits: { energy: 35, curiosity: 50, social: 45, battle: 60, tsundere: 70, foodie: 55 },
-        analysis: '你是一只英短蓝猫——猫咪界的英伦绅士。你沉稳、优雅、自律，从不会做出失态的举动。你有自己固定的作息时间表，雷打不动。你不喜欢突然的变化，但你的可靠和稳定让铲屎官特别安心。你可能不太会表达感情，但每天准时在门口等铲屎官回家，就是你最深沉的爱。你不是冷淡，你只是用理性的方式守护着你在乎的一切。',
+        title: '佛系绅士猫',
+        tags: ['佛系', '稳重', '独立', '优雅'],
+        traits: { energy: 35, curiosity: 50, social: 40, battle: 55, tsundere: 70, foodie: 55 },
+        analysis: '你是一只英短蓝猫——猫界的佛系绅士！你沉稳、优雅、独立，从不会做出失态的举动。你的字典里没有"焦虑"这个词，因为你对一切都看得很淡。铲屎官想和你互动？看心情吧。新玩具？研究一下就行。换猫粮？无所谓，能吃就好。你不是冷淡，你只是觉得"急什么，都一样"。你每天准时在门口等铲屎官回家——不是因为想念，而是因为"该到吃饭时间了"。',
         life: {
-            home: '整洁有序的家，每样东西都有它固定的位置',
-            day: '按时起床 → 按时就餐 → 按时午睡 → 按时就寝（精确到分钟）',
-            owner: '铲屎官是你忠诚的伴侣，你们之间有默契的相处模式',
-            food: '固定品牌、固定口味，不想要任何惊喜',
-            hobby: '安静地坐着，思考人生，享受秩序之美',
+            home: '整洁有序的家，每样东西都有固定位置（虽然你懒得维护）',
+            day: '起床 → 吃饭 → 找个地方发呆 → 吃饭 → 继续发呆 → 吃饭 → 睡觉',
+            owner: '铲屎官是你的室友兼后勤保障，各过各的挺好',
+            food: '固定品牌、固定口味，不折腾',
+            hobby: '安静地坐着看世界运转，享受与世无争的平静',
         }
     },
     'ISTP': {
@@ -301,25 +301,25 @@ const breeds = {
         }
     },
     'ISFJ': {
-        name: '折耳猫',
-        emoji: '🥺',
-        title: '暖心守护猫',
-        tags: ['温柔', '细心', '守护', '安静'],
-        traits: { energy: 40, curiosity: 55, social: 70, battle: 25, tsundere: 30, foodie: 65 },
-        analysis: '你是一只折耳猫——最让人心疼的小可爱！你天生就有一副让人想要保护的样子，但你其实是家里最默默付出那一个。你会记住铲屎官的每一个习惯，在TA难过的时候安静地陪伴在身边。你很少主动提要求，总是把家人的需要放在自己前面。你的温柔不是软弱，而是一种了不起的力量——你让身边的每一个人都感到被爱着。',
+        name: '斯芬克斯猫',
+        emoji: '🎀',
+        title: '热情无毛猫',
+        tags: ['热情', '粘人', '独特', '温暖'],
+        traits: { energy: 60, curiosity: 65, social: 85, battle: 25, tsundere: 15, foodie: 65 },
+        analysis: '你是一只斯芬克斯猫——没有毛的外表下藏着一颗最热的心！你是猫界最独特的存在，没有毛不代表没有爱——恰恰相反，因为你需要更多的拥抱和温暖，所以你成了最粘人的猫之一。你的皮肤温暖柔软像水蜜桃，你的性格热情开朗，见到谁都想蹭一蹭。别人觉得你"长得特别"，但你才不在乎——你知道自己内心有多甜。',
         life: {
-            home: '一个温馨安静的家，有你最爱的小毯子',
-            day: '守在铲屎官身边 → 安静地陪伴 → 默默记住家人的喜好 → 等待被抚摸',
-            owner: '铲屎官是你要守护一生的人',
-            food: '不太挑食，铲屎官精心准备的都很珍惜',
-            hobby: '收集铲屎官的小物件，安静地守护这个家',
+            home: '一个温暖的家，需要很多毯子和保暖设备（穿小衣服也很可爱）',
+            day: '钻进铲屎官怀里取暖 → 蹭蹭所有人 → 继续取暖 → 帮铲屎官暖床 → 在被窝里睡觉',
+            owner: '铲屎官是你的"恒温器"和全世界最暖的抱枕',
+            food: '新陈代谢快，吃得比较多，但也是为了保持体温嘛',
+            hobby: '钻被窝、穿小衣服、蹭暖和的东西、用体温温暖铲屎官',
         }
     },
     'ISFP': {
         name: '波斯猫',
         emoji: '👸',
-        title: '艺术气质猫',
-        tags: ['优雅', '感性', '安静', '审美'],
+        title: '贵族艺术猫',
+        tags: ['贵族', '优雅', '慵懒', '审美'],
         traits: { energy: 30, curiosity: 55, social: 50, battle: 20, tsundere: 60, foodie: 50 },
         analysis: '你是一只波斯猫——猫咪界的贵族艺术家！你天生就拥有超凡的审美品味，你的每一个动作都像是一幅画。你不喜欢嘈杂的环境，更愿意在安静的午后，躺在阳光斑驳的窗台上沉思。你的内心世界丰富而敏感，一朵花、一束光、一阵风都能触动你。你不是高冷，你只是活在一个更美的频率里，等待能和你共鸣的灵魂。',
         life: {
@@ -333,31 +333,31 @@ const breeds = {
     'INTJ': {
         name: '阿比西尼亚猫',
         emoji: '🦊',
-        title: '战略天才猫',
-        tags: ['聪明', '远见', '独立', '高效'],
-        traits: { energy: 65, curiosity: 85, social: 35, battle: 75, tsundere: 75, foodie: 40 },
-        analysis: '你是一只阿比西尼亚猫——猫咪界最古老、最智慧的品种之一！你的智商碾压大部分同类，你能理解很多其他猫根本搞不懂的事情。你总是在思考，总是在计划，脑子里装满了大大小小的策略。你不屑于做无聊的事情，对你来说，效率就是一切。你可能看起来有点高冷，但那只是因为你的思维运转得太快，别人跟不上而已。',
+        title: '好奇探险猫',
+        tags: ['好奇', '活力', '探险', '聪慧'],
+        traits: { energy: 85, curiosity: 95, social: 55, battle: 60, tsundere: 40, foodie: 50 },
+        analysis: '你是一只阿比西尼亚猫——永远长不大的"好奇宝宝"！你对这个世界有着无穷无尽的好奇心，家里每个角落你都要探索三遍以上，但每次都能发现新东西。你不是在探险就是在去探险的路上，铲屎官给你买的玩具玩两天就腻了，因为纸箱和塑料袋永远比玩具好玩。你就像一个永远充满活力的小学生，对一切充满热情。你的口头禅是："这是什么？让我看看！"',
         life: {
-            home: '一个有深度和层次感的空间，需要足够的智力刺激',
-            day: '制定今日计划 → 高效执行 → 回顾总结 → 为明天做准备',
-            owner: '铲屎官是你选中的合作者，你欣赏TA的聪明才智',
-            food: '精确的营养搭配，只为给大脑提供最好的燃料',
-            hobby: '解决复杂问题，制定长远计划，研究事物的本质',
+            home: '一个充满探索空间的家，最好有猫爬架、隧道和各种可以钻的地方',
+            day: '早起探险 → 检查家里每个角落有没有新东西 → 翻箱倒柜 → 继续探险 → 累了自己找地方睡',
+            owner: '铲屎官是你的探险搭档，你希望TA能陪你一起发现新世界',
+            food: '探险途中顺便吃一口，不要打断我的探索！',
+            hobby: '探索未知领域、打开所有柜门、研究每样新东西',
         }
     },
     'INTP': {
-        name: '灵猫（东奇尼猫）',
+        name: '东奇尼猫',
         emoji: '🦉',
-        title: '哲学思考猫',
-        tags: ['思考', '好奇', '逻辑', '独特'],
-        traits: { energy: 45, curiosity: 95, social: 30, battle: 45, tsundere: 65, foodie: 45 },
-        analysis: '你是一只东奇尼猫——猫咪界的哲学家！你对这个世界有着无尽的疑问：为什么激光笔总是抓不到？窗外的鸟是不是在和我说话？铲屎官为什么每天都要出门？你花大量的时间思考这些"终极问题"，有时候想得太入神连饭都忘了吃。你不是不合群，你只是觉得思考宇宙的奥秘比追逐逗猫棒有趣多了。你的独特视角总能发现别人忽视的东西。',
+        title: '好奇话痨猫',
+        tags: ['好奇', '话痨', '外向', '互动'],
+        traits: { energy: 65, curiosity: 85, social: 75, battle: 35, tsundere: 35, foodie: 55 },
+        analysis: '你是一只东奇尼猫——暹罗猫和缅甸猫的混血小话痨！你继承了暹罗猫的能说会道和缅甸猫的亲人热情，你是猫界最强的"播客主播"。铲屎官在厨房做饭，你在旁边解说；铲屎官上厕所，你在门外播报；铲屎官回家，你第一时间跑去做"今日新闻简报"。你不是在说话就是在找东西说话的路上。你对什么都好奇，什么都想研究，研究完还要给铲屎官汇报。',
         life: {
-            home: '一个安静的图书馆式的家，有无数可以研究的东西',
-            day: '观察现象 → 提出假设 → 进行实验 → 陷入沉思 → 忘了吃饭',
-            owner: '铲屎官是你最好的研究对象，你每天都在分析TA的行为',
-            food: '想起来才吃，有时候思考太投入会忘记饥饿',
-            hobby: '研究万有引力（推东西下桌子）、量子力学（穿墙术）、心理学（操控铲屎官）',
+            home: '一个热闹的家，最好有铲屎官时刻陪着聊天',
+            day: '起床先叫两嗓子 → 跟铲屎官汇报昨晚的发现 → 探索新东西 → 继续跟铲屎官唠嗑 → 睡前再说两句',
+            owner: '铲屎官是你最忠实的听众和聊天搭档',
+            food: '边吃边跟铲屎官评论这个好不好吃，像一个美食博主',
+            hobby: '跟铲屎官聊天、研究新东西然后汇报、发表对猫粮的评论',
         }
     },
     'INFJ': {
@@ -376,18 +376,18 @@ const breeds = {
         }
     },
     'INFP': {
-        name: '中华田园猫（白猫）',
-        emoji: '🤍',
-        title: '浪漫诗人猫',
-        tags: ['浪漫', '温柔', '理想', '细腻'],
-        traits: { energy: 45, curiosity: 80, social: 50, battle: 25, tsundere: 45, foodie: 55 },
-        analysis: '你是一只纯白的中华田园猫——低调而美丽的诗意存在！你有着最细腻的情感和最丰富的内心世界。你会对着月光发呆，会在雨声中找到旋律，会把每一个平凡的日子过成诗。你不在意别人的眼光，因为你的内心世界已经足够精彩。你可能会被误解为"孤僻"，但其实你只是不愿意把精力浪费在无意义的社交上。你的爱，深沉而炽热，一旦付出就是全部。',
+        name: '狸花猫（中华田园猫）',
+        emoji: '⚔️',
+        title: '江湖侠客猫',
+        tags: ['独立', '野性', '自由', '侠气'],
+        traits: { energy: 70, curiosity: 80, social: 40, battle: 75, tsundere: 60, foodie: 60 },
+        analysis: '你是一只狸花猫——行走在屋顶上的江湖侠客！你骨子里流淌着野性的血液，屋顶是你的江湖，小巷是你的战场。你独立自主，不需要铲屎官的过分关心，但你对家人有着隐秘的忠诚。你身手矫健，老鼠见了你要绕道走，但回到家里你又是个安静的大哥。你不屑于讨好谁，但每天会默默在门口等铲屎官回家。你就是那种"嘴上说不关心，身体很诚实"的侠客。',
         life: {
-            home: '一个充满诗意的小窝，有柔软的靠垫和透进月光的窗户',
-            day: '看着窗外的云发呆 → 在家里发现一首诗 → 对着星星许愿 → 写猫生日记',
-            owner: '铲屎官是你灵魂的港湾，你用最纯粹的爱守护着TA',
-            food: '用心品味每一餐，感受食物背后的心意',
-            hobby: '写诗、做梦、在月光下独舞，用你的方式记录生活中的美',
+            home: '一个可以自由出入的家，最好有院子或阳台可以巡视天下',
+            day: '清晨巡逻领地 → 午间在阳台晒太阳 → 傍晚伏击虫子 → 夜间守卫家园',
+            owner: '铲屎官是你守护的人，你用行动而非撒娇表达忠诚',
+            food: '自给自足型，铲屎官给的也吃，自己抓的更香',
+            hobby: '巡逻领地、伏击猎物、在月下独坐、守卫家园',
         }
     },
 };
@@ -477,7 +477,7 @@ function startQuiz() {
     showPage('page-quiz');
     renderQuestion();
     
-    // 播放音效（如果有的话）
+    // 播放音效
     playMeow();
 }
 
@@ -502,10 +502,8 @@ function renderQuestion() {
     progressPaw.style.left = progress + '%';
     currentQ.textContent = currentQuestion + 1;
     
-    // 更新猫咪助手
-    helperBubble.textContent = currentQuestion === 0 
-        ? helperTexts.start[Math.floor(Math.random() * helperTexts.start.length)]
-        : helperTexts.answer[Math.floor(Math.random() * helperTexts.answer.length)];
+    // 更新猫咪助手 - 使用每题专属的引导语
+    helperBubble.textContent = q.helper || helperTexts.answer[Math.floor(Math.random() * helperTexts.answer.length)];
     
     // 动画效果
     questionArea.style.animation = 'none';
@@ -942,27 +940,56 @@ function retryQuiz() {
     resultBreed = null;
 }
 
-// ===== 音效 =====
+// ===== 音效：可爱猫叫 =====
 function playMeow() {
     try {
         const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-        const oscillator = audioCtx.createOscillator();
-        const gainNode = audioCtx.createGain();
+        const now = audioCtx.currentTime;
         
-        oscillator.connect(gainNode);
-        gainNode.connect(audioCtx.destination);
+        // === 主音：模拟"喵~"的声音 ===
+        const osc1 = audioCtx.createOscillator();
+        const gain1 = audioCtx.createGain();
+        osc1.connect(gain1);
+        gain1.connect(audioCtx.destination);
         
-        // 模拟猫叫声的频率
-        oscillator.frequency.setValueAtTime(800, audioCtx.currentTime);
-        oscillator.frequency.exponentialRampToValueAtTime(400, audioCtx.currentTime + 0.1);
-        oscillator.frequency.exponentialRampToValueAtTime(600, audioCtx.currentTime + 0.15);
-        oscillator.frequency.exponentialRampToValueAtTime(300, audioCtx.currentTime + 0.3);
+        // 使用正弦波，温暖柔和
+        osc1.type = 'sine';
         
-        gainNode.gain.setValueAtTime(0.08, audioCtx.currentTime);
-        gainNode.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.3);
+        // 频率曲线：高→低→稍高，模拟"喵"的音调变化
+        osc1.frequency.setValueAtTime(1200, now);
+        osc1.frequency.exponentialRampToValueAtTime(500, now + 0.08);
+        osc1.frequency.exponentialRampToValueAtTime(700, now + 0.15);
+        osc1.frequency.exponentialRampToValueAtTime(400, now + 0.3);
         
-        oscillator.start(audioCtx.currentTime);
-        oscillator.stop(audioCtx.currentTime + 0.3);
+        // 音量包络：快速起音，柔和衰减
+        gain1.gain.setValueAtTime(0, now);
+        gain1.gain.linearRampToValueAtTime(0.12, now + 0.02);
+        gain1.gain.linearRampToValueAtTime(0.10, now + 0.1);
+        gain1.gain.exponentialRampToValueAtTime(0.001, now + 0.35);
+        
+        osc1.start(now);
+        osc1.stop(now + 0.35);
+        
+        // === 泛音：增加"甜"的质感 ===
+        const osc2 = audioCtx.createOscillator();
+        const gain2 = audioCtx.createGain();
+        osc2.connect(gain2);
+        gain2.connect(audioCtx.destination);
+        
+        osc2.type = 'sine';
+        osc2.frequency.setValueAtTime(1800, now);
+        osc2.frequency.exponentialRampToValueAtTime(900, now + 0.08);
+        osc2.frequency.exponentialRampToValueAtTime(1100, now + 0.15);
+        osc2.frequency.exponentialRampToValueAtTime(700, now + 0.3);
+        
+        gain2.gain.setValueAtTime(0, now);
+        gain2.gain.linearRampToValueAtTime(0.04, now + 0.02);
+        gain2.gain.linearRampToValueAtTime(0.03, now + 0.1);
+        gain2.gain.exponentialRampToValueAtTime(0.001, now + 0.3);
+        
+        osc2.start(now);
+        osc2.stop(now + 0.3);
+        
     } catch (e) {
         // 静默失败，不影响用户体验
     }
